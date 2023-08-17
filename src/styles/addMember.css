@@ -1,0 +1,19 @@
+.addMemberBtn {
+    border-radius: 3px;
+    background-color: grey;
+    color: white;
+}
+
+.addMemberField {
+    margin: 0 5px 0 10px;
+    width: 25%;
+}
+
+.memberList {
+    list-style-type: none;
+}
+
+.delMemberBtn {
+    margin: 0 0 0 10px;
+    font-size: 10px;
+}
