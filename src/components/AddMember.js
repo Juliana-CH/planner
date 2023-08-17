@@ -37,8 +37,6 @@ export function AddMember(){
                 Adicionar
             </button>
 
-            
-
         </div>
 
         <ul className='memberList'>{nameList.map((nameAdded, index) => (
