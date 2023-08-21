@@ -1,12 +1,13 @@
+@import './customproperties.css';
+
 .addMemberBtn {
-    border-radius: 3px;
-    background-color: grey;
-    color: white;
+    border: none;
+    font-style: italic;
+    background-color: #eaeaea;
 }
 
 .addMemberField {
     margin: 0 5px 0 10px;
-    width: 25%;
 }
 
 .memberList {
@@ -15,5 +16,6 @@
 
 .delMemberBtn {
     margin: 0 0 0 10px;
-    font-size: 10px;
+    font-size: var(--xsmall);
+    font-weight: var(--light);
 }

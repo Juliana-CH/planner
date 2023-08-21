@@ -1,7 +1,9 @@
+@import './customproperties.css';
+
 body {
     padding: 0;
-    margin: 20px;
+    margin: 20px solid white;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(235, 235, 235);
+    background-color: #eaeaea;
     color: rgb(0, 0, 0);
 }

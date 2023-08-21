@@ -1,12 +1,12 @@
 import './styles/global.css';
 import Header from './components/Header';
-import DaySchedule from './components/DaySchedule';
+import WeekDay from './components/WeekDay';
 
 function App() {
   return (
     <>
     <Header />
-    <DaySchedule />
+    <WeekDay />
     </>
   );
 }

@@ -4,15 +4,23 @@ import '../styles/addMember.css';
 export function AddMember(){
     const [name, setName] = useState('');
     const [nameList, setNameList] = useState([]);
+    const [showInput, setShowInput] = useState(false);
 
     const addName = () => {
-        setNameList([...nameList, name]);
-        setName('');
+        if (name.trim() !== '') {
+            setNameList([...nameList, name]);
+            setName('');
+            setShowInput(false);
+        }
     };
     
     const deleteName = (nameToDelete) => {
         const updatedList = nameList.filter(name => name !== nameToDelete);
         setNameList(updatedList);
+    };
+
+    const handleButtonClick = () => {
+        setShowInput(true);
     };
     
 
@@ -20,22 +28,30 @@ export function AddMember(){
         <>
         <div className='addMember'>
 
-            <label htmlFor='name'>Novo membro:</label>
-
-            <input 
-                type='text' 
-                size={"14"} 
-                className='addMemberField'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-            />
-
             <button 
                 type='button' 
                 className='addMemberBtn'
-                onClick={addName}>
-                Adicionar
+                onClick={handleButtonClick}>
+                + adicionar novo membro
             </button>
+
+            {showInput && (
+                <>
+                    <input
+                        type='text'
+                        size={"14"}
+                        className='addMemberField'
+                        value={name}
+                        onChange={(e) => setName(e.target.value)} />
+                        
+                    <button
+                        type='button'
+                        className='confirmAddMemberBtn'
+                        onClick={addName}>
+                        confirmar
+                    </button>    
+                </>
+            )}
 
         </div>
 
@@ -45,7 +61,7 @@ export function AddMember(){
                 type='button'
                 className='delMemberBtn'
                 onClick={() => deleteName(nameAdded)}>
-                DEL
+                del
                 </button>
             </li>
         ))}
