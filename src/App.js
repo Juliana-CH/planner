@@ -5,8 +5,9 @@ import WeekDay from './components/WeekDay';
 function App() {
   return (
     <>
-    <Header />
-    <WeekDay />
+      <Header />
+      <WeekDay />
+
     </>
   );
 }

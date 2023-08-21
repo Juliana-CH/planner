@@ -1,19 +1,23 @@
 @import './customproperties.css';
 
-.addMember {
+.addTaskBtn {
     display: flex;
-    justify-content: center;
+    border: none;
+    font-style: italic;
+    background-color: #eaeaea;
+    text-align: center;
+    cursor: pointer;
 }
 
-.addMemberField {
+.addTaskField {
     margin: 0 5px 0 10px;
 }
 
-.memberList {
+.taskList {
     list-style-type: none;
 }
 
-.delMemberBtn {
+.delTaskBtn {
     margin: 0 0 0 10px;
     font-size: var(--xsmall);
     font-weight: var(--light);

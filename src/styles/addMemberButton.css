@@ -1,0 +1,14 @@
+@import './customproperties.css';
+
+.addMember {
+    display: flex;
+    justify-content: center;
+}
+
+.addMemberBtn {
+    border: none;
+    font-style: italic;
+    background-color: #eaeaea;
+    cursor: pointer;
+    text-align: center;
+}
